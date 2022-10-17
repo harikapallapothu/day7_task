@@ -87,3 +87,55 @@ class Movie{
  2.
  
  
+ ------------------------------------------------------------------------------------------
+ 3.
+ 
+class person{
+    constructor(name, age, height, weight, salary, city, employee_id){
+        this.name = name;
+        this.age=age;
+        this.height = height;
+        this.weight= weight;
+        this.salary= salary;
+        this.city = city;
+        this.employee_id = employee_id
+    }
+}
+
+var employee1 = new person('sandeep', 29, '5.11', 75, 600000, 'hyderabad', '5834');
+console.log(employee1);
+console.log(employee1.age);
+ -----------------------------------------------------------------------------------------
+ 4.
+ class Uber_price{
+    constructor(kilometer){
+        if(kilometer==undefined){
+             console.log(`the price is 25`)
+        }else{
+            this.kilometer=kilometer;
+            var cost = 18*kilometer;
+            var discount = 0.75*cost;
+            console.log(`the base fare is ${cost}`);
+            console.log(`the final fare is ${discount}`)
+    
+        }
+       
+    }
+    getPrice(){
+        
+        let total = 18*this.kilometer;
+        return total;
+    }
+    getDiscount(){
+        ;
+        let total = 18*this.kilometer;
+        let discount = 0.75*total;
+        return discount;
+        
+    }
+}
+var price= new Uber_price(10);
+
+console.log(`the actual fare is ${price.getPrice()}`);
+console.log(`the discounted fare is ${price.getDiscount()}`);
+
