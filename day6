@@ -1,0 +1,89 @@
+1. 
+a.
+class Movie{
+    constructor(title, studio, rating){
+        this.title=title;
+        this.studio=studio;
+        this.rating = rating;
+        
+    }
+    
+}
+------------------------------------------------------------------------------------------
+b.
+
+class Movie{
+    constructor(title, studio, rating){
+        this.title=title;
+        this.studio=studio;
+        if(rating==undefined){
+            this.rating = "PG"
+        }else{
+            this.rating=rating;
+        }
+        
+    }
+}
+ var film1 = new Movie("Casino Royale","Eon Productions","PG13");
+ var film2 = new Movie("bahubali","Ak media");
+ 
+ var array = [film1,film2];
+ for(i=0;i<array.length;i++){
+    console.log(array[i])
+ }
+
+
+
+-------------------------------------------------------------------------------------------
+c.
+
+class Movie{
+    constructor(title, studio, rating){
+        this.title=title;
+        this.studio=studio;
+        if(rating==undefined){
+            this.rating = "PG"
+        }else{
+            this.rating=rating;
+        }
+        
+    }
+    getPG(){
+        if(array[i].rating==="PG"){
+        console.log(array[i].title)
+        }
+       
+    }
+}
+ var film1 = new Movie("Casino Royale","Eon Productions","PG13");
+ var film2 = new Movie("bahubali","Ak media");
+ var film3 = new Movie("sitaramam","Vyjayanthi Production","PG");
+ var film4 = new Movie("Rocketry","SS production","PG13");
+ var film5 = new Movie("Sitara", "RR productions", "PG")
+ 
+ var array = [film1,film2,film3,film4,film5];
+ for(i=0;i<array.length;i++){
+    array[i].getPG();
+ }
+
+------------------------------------------------------------------------------------
+
+d.
+class Movie{
+    constructor(title, studio, rating){
+        this.title=title;
+        this.studio=studio;
+        this.rating = rating;
+        
+    }
+    
+}
+ var film1 = new Movie("Casino Royale","Eon Productions","PG13");
+ 
+ console.log(film1)
+ 
+ ---------------------------------------------------------------------------------------
+ 
+ 2.
+ 
+ 
